@@ -1,0 +1,80 @@
+/* فونت مدرن */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #1a1a1a;
+  --text-dark: #eaeaea;
+  --accent: #ff4d6d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  line-height: 1.8;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 100;
+  transition: background 0.3s;
+}
+.toggle-btn:hover {
+  background: #e13c5b;
+}
+
+.instagram {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+.instagram a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+.instagram a:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .toggle-btn {
+  background: #444;
+}
+body.dark-mode h1 {
+  color: #ff758f;
+}
+body.dark-mode .instagram a {
+  color: #ff758f;
+}
